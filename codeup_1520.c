@@ -34,14 +34,11 @@ void set_next_generation(int board[172][172], int a, int b, int x, int y, int z)
 			for(int p=0; p<8; p++){
 		        sum+=board[i+pxy[p][0]][j+pxy[p][1]];
 		    }
-//====================================================
-//이부분에서 문제가 발생합니다, sum은 정상적으로 구해짐.
 			if(board[i][j] == 0){
-				new_board[i][j] = sum >= x ? 1 : 0;
+				new_board[i][j] = sum == x ? 1 : 0;
 			}else{
 				new_board[i][j] = (sum<z && sum>=y) ? 1 : 0;
 			}
-//====================================================
 		}
 	}
 	for(int i=1; i<=a; i++)	{
