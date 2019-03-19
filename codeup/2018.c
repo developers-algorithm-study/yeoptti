@@ -4,7 +4,7 @@
 void next(int *arr);
 int main(){
     int a,b; scanf("%d %d", &a, &b);
-    int arr[904] = {0, };
+    int arr[906] = {0, };
     int i,j;
     for(i=1;i<a;i++){
         next(arr);
@@ -23,7 +23,7 @@ void next(int *arr){
         arr[0]=1;
         return;
     }
-    int tmp[904]={0, };
+    int tmp[906]={0, };
     int i, cur=0, n, m;
     for(i=0;arr[i];i++){
         m=1;
