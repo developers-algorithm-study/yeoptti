@@ -1,12 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
 	int rows, cols;
-	char map[102][102]={0, };
+	char map[102][102];
 	int search[8][2] = {{-1, -1}, {-1, 0}, {-1, 1}, {0, -1}, {0, 1}, {1, -1}, {1, 0}, {1, 1}};
 	while("row==0, cols==0 to exit"){
 		scanf("%d %d", &rows, &cols);
+		memset(map, 0, sizeof(map));
 		if(!(rows)||!(cols)) break;
 		for(int r=1; r<=rows; r++){
 				scanf("%s", &map[r][1]);
@@ -23,7 +25,7 @@ int main()
 			}
 		}
 		
-		for(int r=1; r<=rows; r++){
+		for(int r=1; r<=rows; r++){		//출력 
 			for(int c=1; c<=cols; c++){
 				printf("%c", map[r][c]);
 			}
