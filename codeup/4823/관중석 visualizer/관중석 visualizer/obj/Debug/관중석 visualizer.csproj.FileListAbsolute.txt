@@ -1,0 +1,9 @@
+C:\Users\InYeop\source\repos\관중석 visualizer\관중석 visualizer\bin\Debug\관중석 visualizer.exe.config
+C:\Users\InYeop\source\repos\관중석 visualizer\관중석 visualizer\bin\Debug\관중석 visualizer.exe
+C:\Users\InYeop\source\repos\관중석 visualizer\관중석 visualizer\bin\Debug\관중석 visualizer.pdb
+C:\Users\InYeop\source\repos\관중석 visualizer\관중석 visualizer\obj\Debug\관중석 visualizer.csprojAssemblyReference.cache
+C:\Users\InYeop\source\repos\관중석 visualizer\관중석 visualizer\obj\Debug\관중석_visualizer.Form1.resources
+C:\Users\InYeop\source\repos\관중석 visualizer\관중석 visualizer\obj\Debug\관중석_visualizer.Properties.Resources.resources
+C:\Users\InYeop\source\repos\관중석 visualizer\관중석 visualizer\obj\Debug\관중석 visualizer.csproj.GenerateResource.cache
+C:\Users\InYeop\source\repos\관중석 visualizer\관중석 visualizer\obj\Debug\관중석 visualizer.exe
+C:\Users\InYeop\source\repos\관중석 visualizer\관중석 visualizer\obj\Debug\관중석 visualizer.pdb
