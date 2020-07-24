@@ -14,6 +14,19 @@ namespace 관중석_visualizer
 	{
 		private int D1 = 0, D2 = 0;
 		private bool[,] chk;
+
+		private int get_gcd(int u, int v)
+		{
+			if (v == 0)
+			{
+				return u;
+			}
+			else
+			{
+				return get_gcd(v, u % v);
+			}
+		}
+
 		public Form1()
 		{
 			InitializeComponent();
@@ -37,19 +50,18 @@ namespace 관중석_visualizer
 						e.Graphics.DrawEllipse(Pens.Black, pictureBox1.Width / 2 - 10 * (i + 2), pictureBox1.Height / 2 - 10 * (i + 2), 20 * (i + 2), 20 * (i + 2));
 						for(int j = 1; j <= i; j++)
 						{
-							int k;
-							for (k = 1; !(k % i == 0 && k % j == 0); k++) ;
+							int k = get_gcd(i, j);
 							float angle = 360 / Convert.ToSingle(i) * j - 90;
 							
 							PointF dot = new PointF(pictureBox1.Width / 2 + Convert.ToSingle(Math.Cos(Math.PI * angle / 180.0)) * 10 * (i + 2) - 3, pictureBox1.Height / 2 + Convert.ToSingle(Math.Sin(Math.PI * angle / 180.0) * 10 * (i + 2))-3);
-							if (chk[k / i, k / j])
+							if (chk[i / k, j / k])
 							{
 								e.Graphics.DrawEllipse(Pens.Black, new RectangleF(dot, new SizeF(6, 6)));
 							}
 							else
 							{
 								e.Graphics.FillEllipse(Brushes.Black, new RectangleF(dot, new SizeF(6, 6)));
-								chk[k / i, k / j] = true;
+								chk[i / k, j / k] = true;
 								count++;
 							}
 
