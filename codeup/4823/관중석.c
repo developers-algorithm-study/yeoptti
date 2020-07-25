@@ -16,7 +16,7 @@ int get_gcd(int u, int v){
 		return get_gcd(v, u%v);
 	}
 }
-int chk[20001][20001];
+int chk[2001][2001];
 int main(){
 	int D1, D2, k, count = 0;
 	
